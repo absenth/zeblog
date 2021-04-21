@@ -21,7 +21,7 @@ Logs should have the following elements at a minimum
 
 1. put the whole thing in docker
 2. use mariadb for data persistence
-3. use ncurses for a tui
+3. use [ncurses](https://docs.python.org/3/howto/curses.html) for a tui
 4. actually make this all work
 5. write this in python
 6. inspiration: [yfklog](https://fkurz.net/ham/yfklog.html)
