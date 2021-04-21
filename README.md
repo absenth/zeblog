@@ -6,15 +6,15 @@ Logs should have the following elements at a minimum
 
 1. Call sign
 2. Date/Time in UTC of contact
-  1. Time QSO starts
-  2. Time QSO ends
+..1. Time QSO starts
+..2. Time QSO ends
 3. Signal Report
 4. Band Used
 5. Mode Used
 6. QTH - location
 7. QSL
-  1. Sent?
-  2. Received?
+..1. Sent?
+..2. Received?
 
 
 ## Ideas:
