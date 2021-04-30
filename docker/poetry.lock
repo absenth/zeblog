@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "zeblog"
+version = "0.2.14"
+description = ""
+authors = ["Lars Noldan <lars@w9zeb.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "1.1.2"
+flask-bootstrap = "3.3.7.1"
+peewee = "3.14.4"
+http_request = "1.2"
+
+
