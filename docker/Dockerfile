@@ -1,8 +1,6 @@
 FROM python:3.9 as base
 
-ENV DEBIAN_FRONTEND noninteractive
 ENV TZ America/Chicago
-ENV TERM=xterm-256color
 
 RUN pip install poetry
 
