@@ -29,3 +29,14 @@ Logs should have the following elements at a minimum
 8. use grig to get Band & Mode from transceiver
    [grig](https://aur.archlinux.org/packages/grig/)
 9. Connect to QRZ.com API to pull station details
+
+## Technologies:
+
+1. Docker
+2. Python
+3. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+4. [Flask-Bootstrap](https://pythonhosted.org/Flask-Bootstrap/)
+5. [PeeWee3](http://docs.peewee-orm.com/en/latest/)
+6. [poetry](https://python-poetry.org/)
+7. [request](https://docs.python-requests.org/en/master/index.html)
+8. [mariadb](https://mariadb.org/)
