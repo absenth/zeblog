@@ -1,9 +1,22 @@
-FROM python:3.8
+FROM python:3.9 as base
 
-WORKDIR /app
-COPY . .
+ENV DEBIAN_FRONTEND noninteractive
+ENV TZ America/Chicago
+ENV TERM=xterm-256color
 
-RUN pip install -r requirements.txt
+RUN pip install poetry
 
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+ARG UID=1001
+RUN useradd -m -u ${UID} zeblog \
+    && mkdir /zeblog \
+    && chown zeblog:zeblog /zeblog \
+    && poetry config virtualenvs.create false
+
+WORKDIR /zeblog
+
+FROM base as dependencies
+COPY --chown=zeblog:zeblog pyproject.toml /zeblog
+COPY --chown=zeblog:zeblog poetry.lock /zeblog
+RUN poetry install --no-interaction --no-root --ansi
+
+
